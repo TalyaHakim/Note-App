@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>MY NOTES BOARD</legend>
+    <label for="text">
+        <input type="text" id="todo"/>
+    </label>
+    <label for="date">
+        <input type="date" id="date"/>
+    </label>
+    <br>
+    <label for="time">
+        <input type="time" id="time"/>
+    </label>
+    <br>
+        <button onclick="note(todo.value,date.value,time.value)">create</button>
+    <br>
+    <label>
+        <input type="text" id="search" placeholder="Search"/>
+    </label>
+    <button onclick="findNote(search.value)">Find Me</button>
+</fieldset>
+
+<div id="allnotes"></div>
+
+<script src="script1.js"></script>
+</body>
+</html>
